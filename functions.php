@@ -39,3 +39,8 @@ function addCustomMenus() {
   register_nav_menu('footer_nav', 'This is the navigation that appears at the top of the page');
 }
 add_action('init', 'addCustomMenus');
+
+// require_once get_template_directory(). '/class-wp-bootstrap-navwaler.php';
+
+//turning on post formats
+add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'video' ) );
